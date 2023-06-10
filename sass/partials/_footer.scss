@@ -1,0 +1,37 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #F87C34;
+	margin-top: 5px;
+	padding: 20px;
+	.first_linetext{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		a{
+			font-family: 'Noto Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 33px;
+			/* identical to box height */
+			
+			text-align: center;
+			
+			color: #FFFFFF;
+			padding: 0 40px 0 0 ;
+		}
+	}
+	.second_linetext{
+		font-family: 'Noto Sans';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25px;
+		/* identical to box height */
+
+		
+
+		color: #FFFFFF;
+	}
+}

@@ -1,0 +1,743 @@
+/* SCSS Compiled */
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #000;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #000;
+}
+
+/*
+@media (min-width: 1921px){}
+@media (width: 1920px){}
+@media (min-width: 1440px) and (max-width: 1919px) {}
+@media (min-width: 1360px) and (max-width: 1439px) {}
+@media (min-width: 1280px) and (max-width: 1359px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 375px) and (max-width: 767px) {}
+@media (min-width: 320px) and (max-width: 374px) {}
+*/
+/*
+@media (max-width: 1919px) {}
+@media (max-width: 1439px) {}
+@media (max-width: 1279px) {}
+@media (max-width: 767px) {}
+*/
+/*usage  @include font-size(13);*/
+/* Brand Colors ------------------------------------------------*/
+#wrapper,
+main,
+#content,
+#sidebar,
+aside,
+section {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.layout {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.layout2 {
+  display: block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto 0 auto;
+  padding: 62px 0 62px 0;
+}
+
+header {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #393939;
+  border-bottom: 1px solid #FFFFFF;
+}
+header .layout .flex_block {
+  height: 128px;
+  max-width: 850px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .layout .flex_block nav {
+  display: flex;
+  align-items: center;
+}
+header .layout .flex_block nav ul {
+  display: flex;
+  flex-direction: row;
+}
+header .layout .flex_block nav ul li {
+  padding: 0 7px 0 7px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+header .layout .flex_block nav ul li a {
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #F87C34;
+  margin-top: 5px;
+  padding: 20px;
+}
+footer .first_linetext {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .first_linetext a {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 40px 0 0;
+}
+footer .second_linetext {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+main .subheader {
+  background-color: #393939;
+  height: 363px;
+  position: relative;
+}
+main .subheader .car_smoke {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  float: right;
+}
+main .subheader .car_smoke .car {
+  height: 363px;
+  margin-left: 40px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+}
+main .subheader .subheader_text {
+  position: absolute;
+  max-width: 800px;
+  display: block;
+  margin: 30px 0 0 100px;
+}
+main .subheader .subheader_text .logo_text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .subheader .subheader_text .logo_text .logo img {
+  height: 150px;
+  width: 280px;
+}
+main .subheader .subheader_text .logo_text .flex_text {
+  margin-left: 45px;
+}
+main .subheader .subheader_text .logo_text .flex_text .text {
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+}
+main .subheader .subheader_text .logo_text .flex_text .text span {
+  color: rgb(248, 124, 52);
+}
+main .subheader .subheader_text .logo_text .flex_text .text2 {
+  padding-top: 15px;
+  border-top: 5px solid rgb(248, 124, 52);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  color: #FFFFFF;
+}
+main .subheader .subheader_text .logo_text .flex_text .phone_text {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .subheader .subheader_text .logo_text .flex_text .phone_text a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 10px;
+  color: #F87C34;
+}
+main .subheader .subheader_text .subheader_buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 45px 0 0 100px;
+}
+main .subheader .subheader_text .subheader_buttons .button {
+  padding: 8px 12px 8px 12px;
+  margin: 0 18px 0 18px;
+  background: #FFFFFF;
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 24px 24px 0px 0px;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+main .main_block1 {
+  padding-bottom: 80px;
+  background-color: #f0ecec;
+  padding: 0 20px 0 20px;
+}
+main .main_block1 h1 span {
+  color: #F87C34;
+}
+main .main_block1 .gofox_manager {
+  border: 8px solid #F87C34;
+  padding: 28px 60px 28px 60px;
+}
+main .main_block1 .gofox_manager .flex_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main_block1 .gofox_manager .flex_block .text_block {
+  max-width: 508px;
+}
+main .main_block1 .gofox_manager .flex_block .text_block .text1 {
+  padding: 0 0 32px 0;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  /* identical to box height */
+  color: #000000;
+}
+main .main_block1 .gofox_manager .flex_block .text_block .text2 {
+  padding-bottom: 23px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #454545;
+}
+main .main_block1 .block1_text {
+  padding-top: 50px;
+}
+main .main_block1 .block1_text .flex_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .main_block1 .block1_text .flex_block .text_block1 {
+  max-width: 800px;
+}
+main .main_block1 .block1_text .flex_block .text_block1 .text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #454545;
+}
+main .main_block1 .block1_text .flex_block .text_block2 .text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 82px;
+  color: #F87C34;
+}
+main .main_block1 .block1_text .flex_block .text_block2 .text2 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+main .main_block2 {
+  background-color: #F87C34;
+}
+main .main_block2 .block2_smoke {
+  position: absolute;
+}
+main .main_block2 .block2_maintext {
+  padding: 0 20px 10px 20px;
+}
+main .main_block2 .block2_maintext .main_text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+main .main_block2 .block2_maintext .flex_blocks {
+  max-width: 875px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+main .main_block2 .block2_maintext .flex_blocks .blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .main_block2 .block2_maintext .flex_blocks .blocks .block {
+  background: #FFFFFF;
+  border-radius: 25px;
+  width: 275px;
+  height: 209px;
+  margin: 30px 5px 0 5px;
+  padding: 38px 32px 10px 32px;
+  display: flex;
+  justify-content: center;
+}
+main .main_block2 .block2_maintext .flex_blocks .blocks .block .text {
+  position: absolute;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 41px;
+  display: block;
+  margin: 0 auto 0 auto;
+  color: #000000;
+  max-width: 190px;
+}
+main .main_block2 .block2_maintext .flex_blocks .blocks .block .flex_block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 233px;
+  padding-top: 5px;
+  border-top: 3px solid #F87C34;
+}
+main .main_block3 {
+  padding: 0 20px 40px 20px;
+  background-color: #f0ecec;
+}
+main .main_block3 .main3_flexblocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .main_block3 .main3_flexblocks .info_block {
+  margin-bottom: 32px;
+  background-color: #fff;
+  width: 280px;
+  margin: 30px 6px 0 6px;
+  padding: 10px 25px 10px 25px;
+}
+main .main_block3 .main3_flexblocks .info_block .flex_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .main_block3 .main3_flexblocks .info_block .flex_block .text {
+  display: block;
+  margin: 0 auto 0 auto;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+main .main_block3 .main3_flexblocks .info_block .margin {
+  display: block;
+  margin: 15px auto 0 auto;
+}
+main .main_block3 .main3_callback {
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border: 8px solid #F87C34;
+}
+main .main_block3 .main3_callback .number_text {
+  max-width: 350px;
+}
+main .main_block3 .main3_callback .number_text .flex_block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .main_block3 .main3_callback .number_text .text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #000000;
+}
+main .main_block3 .main3_callback .number_text .text2 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #454545;
+}
+main .main_block3 .main3_callback .input_block {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+}
+main .main_block3 .main3_callback .input_block .text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 65px;
+}
+main .main_block3 .main3_callback .input_block .form {
+  display: flex;
+  flex-direction: column;
+}
+main .main_block3 .main3_callback .input_block .form textarea {
+  padding: 20px;
+  resize: none;
+  background: #FCFCFC;
+  border: 1px solid #CDCDCD;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 245px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  margin-bottom: 15px;
+  color: #8F8D8D;
+}
+main .main_block3 .main3_callback .input_block .form input {
+  margin-bottom: 20px;
+  background: #FCFCFC;
+  padding: 20px;
+  height: 75px;
+  border: 1px solid #CDCDCD;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #8F8D8D;
+}
+main .main_block3 .main3_callback .input_block .form input::placeholder {
+  color: #8F8D8D;
+}
+main .main_block3 .main3_callback .input_block .form button {
+  border: 0px;
+  height: 73px;
+  background: #F87C34;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+main .main_block3 .main3_callback .input_block .form button:hover {
+  background: #ef6c20;
+}
+main .main_block4 {
+  background-color: #F87C34;
+  padding: 130px 0 130px 0;
+}
+main .main_block4 .mySlides {
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+main .main_block4 .mySlides .productstobuy {
+  background: #393939;
+  border-radius: 0px 360px 360px 0px;
+  width: 400px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+main .main_block4 .mySlides .flex_block_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 200px 20px 80px;
+}
+main .main_block4 .mySlides .flex_block_main .flex_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main_block4 .mySlides .flex_block_main .flex_block .text {
+  font-family: "Noto Sans";
+  width: 340px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #454545;
+}
+main .main_block4 .mySlides .flex_block_main .sell {
+  display: block;
+  margin: 0 auto 0 auto;
+  margin-top: 30px;
+  background: #F87C34;
+  border-radius: 30px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+main .main_block4 .mySlides .flex_block_main .padding {
+  padding: 20px 80px 20px 80px;
+}
+main .main_block5 {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #F87C34;
+}
+main .main_block5 .contact {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 57px;
+  color: #FFFFFF;
+}
+main .main_block5 .contack_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+main .main_block5 .contack_flex .flex_block1 {
+  margin: 50px 50px 50px 0;
+  max-width: 320px;
+}
+main .main_block5 .contack_flex .flex_block1 .flex_mesengers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .main_block5 .contack_flex .flex_block1 .flex_mesengers a {
+  padding: 10px;
+}
+main .main_block5 .contack_flex .flex_block2 {
+  margin: 50px 50px 50px 0;
+}
+main .main_block5 .contack_flex .flex_block2 .button {
+  background: #494949;
+  border: 2px solid #FFFFFF;
+  border-radius: 360px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  padding: 15px 30px;
+}
+main .main_block5 .contack_flex .text1 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 49px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+main .main_block5 .contack_flex .text2 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
